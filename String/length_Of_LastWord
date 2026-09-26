@@ -1,0 +1,20 @@
+class Solution {
+    public int lengthOfLastWord(String s) {
+        int count = 0;
+        int rp = s.length()-1;
+
+        while(rp >= 0 && s.charAt(rp) == ' '){
+            rp--;
+        }
+
+        while(rp >= 0 && s.charAt(rp) != ' '){
+            count++;
+            rp--;
+        }
+
+        return count;
+    }
+}
+
+// Time complexity -> O(n)
+// Space complexity -> O(1)
