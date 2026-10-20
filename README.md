@@ -1,32 +1,29 @@
 # DSA in Java
 
-A beginner-friendly Java repository for practicing Data Structures and Algorithms (DSA). This project is organized as a clean, reusable Java library with examples and tests, while keeping the original problem-solving files from earlier practice work intact.
+A practical Java repository for learning and practicing Data Structures and Algorithms.
 
-## Why this repo?
+## Purpose
 
-This repository is designed for:
+This repo is designed for:
+- learning core DSA concepts in Java
+- writing clean and readable implementations
+- understanding time complexity and edge cases
+- practicing problem solving with real examples
+- building a reusable Java project structure
 
-- learning and practicing DSA in Java
-- understanding common data structures and algorithms
-- writing clean, readable Java code
-- using a consistent project layout
-- building confidence with examples and tests
-
-## Topics covered
+## Topics included
 
 - Arrays
 - Linked Lists
 - Stacks
-- Queues
 - Trees
-- Graph basics
 - Searching
 - Sorting
+- String problems
 - Binary Search
 - Bit Manipulation
-- String problems
 
-## Project structure
+## Repository structure
 
 ```text
 .
@@ -38,6 +35,8 @@ This repository is designed for:
 ├── Stacks/
 ├── String/
 ├── docs/
+│   ├── complexity-guide.md
+│   └── edge-cases.md
 ├── src/
 │   ├── main/java/com/abhishekkushwaha491/dsa/
 │   │   ├── array/
@@ -58,17 +57,17 @@ This repository is designed for:
 
 ### Prerequisites
 
-- Java 17 or later
+- Java 17+
 - Maven 3.8+
 
-### Clone the repository
+### Clone
 
 ```bash
 git clone https://github.com/abhishekkushwaha491/dsa-java.git
 cd dsa-java
 ```
 
-### Build the project
+### Build
 
 ```bash
 mvn clean compile
@@ -80,10 +79,10 @@ mvn clean compile
 mvn test
 ```
 
-### Run a sample example
+### Run example program
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.abhishekkushwaha491.dsa.examples.DsaExamples"
+mvn exec:java
 ```
 
 ## Example usage
@@ -101,28 +100,29 @@ public class Main {
 }
 ```
 
-## Data structures included
+## Complexity and edge case notes
 
-- `ArrayUtils` for array operations
-- `SinglyLinkedList` for linked list practice
-- `ArrayStack` for stack operations
-- `BinaryTree` for tree traversal and insertion
+Every major data structure and algorithm in this repo is documented with:
+- time complexity
+- space complexity
+- edge cases
 
-## Important note
+You can review those notes in:
+- `docs/complexity-guide.md`
+- `docs/edge-cases.md`
 
-The repository originally contained many topic-based practice files with names such as `Arrays/SelectionSort.java` and `LinkedList/ReverseLinkedList.java`. Those remain in the root folders as part of the learning journey, while the new structured Java project under `src/main/java` provides a cleaner, reusable foundation for future development.
+## Original problem files
 
-## Documentation
+The repository still contains original practice files such as:
+- `Arrays/SelectionSort.java`
+- `LinkedList/ReverseLinkedList.java`
 
-See the `docs/` folder for:
-
-- overview of the repository
-- complexity notes
-- algorithm references
+These remain as historical problem-solving files, while the structured Java code under `src/main/java` is meant to be a cleaner reusable foundation.
 
 ## Contributing
 
-Contributions are welcome. Please read `CONTRIBUTING.md` before opening a pull request.
+We welcome improvements, bug fixes, and new DSA implementations.
+Please read `CONTRIBUTING.md` before opening a pull request.
 
 ## License
 
